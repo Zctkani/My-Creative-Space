@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background-color: #c9f0c1; /* matched background */
+      font-family: 'Segoe UI', sans-serif;
+      color: #2c4c34;
+      position: relative;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 40px 20px;
+      margin: 0;
+      z-index: 2;
+      position: relative;
+    }
+
+    li {
+      padding: 12px 0;
+      font-size: 18px;
+      position: relative;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+      text-decoration: none;
+      color: #2c4c34;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    li:hover {
+      background-color: #b6e8ae;
+    }
+
+    a:hover {
+      color: #176d37;
+      transform: translateX(6px);
+    }
+
+    li:hover::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      height: 24px;
+      width: 5px;
+      background-color: #45a168;
+      border-radius: 4px;
+    }
+
+    /* Floating sticker icons */
+    .sticker {
+      position: absolute;
+      color: #2f5038;
+      font-size: 24px;
+      opacity: 0.4;
+      pointer-events: none;
+      animation: float 6s ease-in-out infinite, twinkle 4s ease-in-out infinite;
+      z-index: 1;
+    }
+
+    .s1 { top: 20px; left: 10%; }
+    .s2 { top: 120px; right: 15%; animation-delay: 0.5s; }
+    .s3 { top: 200px; left: 25%; animation-delay: 1s; }
+    .s4 { top: 320px; right: 10%; animation-delay: 1.5s; }
+    .s5 { top: 420px; left: 12%; animation-delay: 2s; }
+    .s6 { top: 540px; right: 8%; animation-delay: 2.5s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.7; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sticker s1">🍃</div>
+  <div class="sticker s2">🌼</div>
+  <div class="sticker s3">⭐</div>
+  <div class="sticker s4">🍀</div>
+  <div class="sticker s5">🌸</div>
+  <div class="sticker s6">🌻</div>
+
+  <ul>
+    <li><a href="home.html" target="rightframe">🏠 Home</a></li>
+    <li><a href="about.html" target="rightframe">👩‍💻 About</a></li>
+    <li><a href="blog.html" target="rightframe">📰 Blog</a></li>
+    <li><a href="contact.html" target="rightframe">📩 Contact</a></li>
+    <li><a href="inspiration.html" target="rightframe">🌈 Inspiration</a></li>
+  </ul>
+
+</body>
+</html>
+s

@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      background-color: #c9f0c1;
+      font-family: 'Segoe UI', sans-serif;
+      color: #244e3b;
+      padding: 50px;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 34px;
+      color: #2d5c3f;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: #3c5948;
+      text-align: center;
+    }
+
+    .blog-entry {
+      background-color: #ecffeb;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      padding: 30px;
+      margin: 0 auto 30px auto;
+      max-width: 900px;
+    }
+
+    .blog-entry h2 {
+      color: #3e704f;
+      margin-bottom: 10px;
+    }
+
+    .blog-entry p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Floating sticker styles */
+    .leaf {
+      position: absolute;
+      font-size: 28px;
+      opacity: 0.3;
+      animation: float 10s ease-in-out infinite;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    /* Sticker positions and delays */
+    .leaf1  { top: 8%;  left: 6%;  animation-delay: 0s; }
+    .leaf2  { top: 15%; left: 80%; animation-delay: 1s; }
+    .leaf3  { top: 50%; left: 20%; animation-delay: 2s; }
+    .leaf4  { top: 35%; left: 70%; animation-delay: 3s; }
+    .leaf5  { top: 70%; left: 30%; animation-delay: 4s; }
+    .leaf6  { top: 5%;  left: 45%; animation-delay: 5s; }
+    .leaf7  { top: 85%; left: 60%; animation-delay: 6s; }
+    .leaf8  { top: 60%; left: 85%; animation-delay: 1.5s; }
+    .leaf9  { top: 28%; left: 5%;  animation-delay: 2.5s; }
+    .leaf10 { top: 90%; left: 10%; animation-delay: 3.5s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(12px) rotate(6deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="leaf leaf1">🍃</div>
+  <div class="leaf leaf2">🌿</div>
+  <div class="leaf leaf3">🍂</div>
+  <div class="leaf leaf4">✨</div>
+  <div class="leaf leaf5">🌸</div>
+  <div class="leaf leaf6">⭐</div>
+  <div class="leaf leaf7">🍀</div>
+  <div class="leaf leaf8">💫</div>
+  <div class="leaf leaf9">🌻</div>
+  <div class="leaf leaf10">🪴</div>
+
+  <h1>📰 My Blog</h1>
+  <div class="subtitle">Sharing thoughts, ideas, and discoveries along the way</div>
+
+  <div class="blog-entry">
+    <h2>📱 Fixing My First Phone</h2>
+    <p>I still remember how nervous I was when I first opened up a phone to repair it. But the moment it powered on again — it was the start of a journey. That first success taught me how rewarding problem-solving could be.</p>
+  </div>
+
+  <div class="blog-entry">
+    <h2>🌿 The Joy of Simple Repairs</h2>
+    <p>Not every fix needs to be complicated. Sometimes it's just about patience and focus. From replacing screens to checking charging ports, it’s the little wins that matter most.</p>
+  </div>
+
+  <div class="blog-entry">
+    <h2>🔧 My Favorite Tools</h2>
+    <p>I’ve learned that having the right tools can change everything. From suction cups to precision screwdrivers, these tools make every repair smoother — and more fun.</p>
+  </div>
+
+</body>
+</html>

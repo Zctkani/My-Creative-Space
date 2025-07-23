@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      background-color: #e6fbe0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #244e3b;
+      padding: 50px;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #3e704f;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 34px;
+      color: #3e704f;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: #456a58;
+    }
+
+    .section {
+      background-color: #f5fff0;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 30px;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    .section h2 {
+      color: #3e704f;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .leaf {
+      position: absolute;
+      font-size: 22px;
+      opacity: 0.6; /* darker stickers */
+      animation: float 12s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    /* Multiple stickers randomly placed */
+    .leaf1 { top: 10%; left: 5%; animation-delay: 0s; }
+    .leaf2 { top: 20%; left: 80%; animation-delay: 1s; }
+    .leaf3 { top: 30%; left: 15%; animation-delay: 2s; }
+    .leaf4 { top: 40%; left: 70%; animation-delay: 3s; }
+    .leaf5 { top: 50%; left: 25%; animation-delay: 4s; }
+    .leaf6 { top: 60%; left: 60%; animation-delay: 5s; }
+    .leaf7 { top: 70%; left: 10%; animation-delay: 6s; }
+    .leaf8 { top: 80%; left: 90%; animation-delay: 7s; }
+    .leaf9 { top: 15%; left: 40%; animation-delay: 8s; }
+    .leaf10 { top: 75%; left: 50%; animation-delay: 9s; }
+    .leaf11 { top: 5%; left: 95%; animation-delay: 10s; }
+    .leaf12 { top: 85%; left: 30%; animation-delay: 11s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(10px) rotate(5deg); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Lots of floating stickers -->
+  <div class="leaf leaf1">🍃</div>
+  <div class="leaf leaf2">🌿</div>
+  <div class="leaf leaf3">🍂</div>
+  <div class="leaf leaf4">🍁</div>
+  <div class="leaf leaf5">🌱</div>
+  <div class="leaf leaf6">🍃</div>
+  <div class="leaf leaf7">🌿</div>
+  <div class="leaf leaf8">🍂</div>
+  <div class="leaf leaf9">🍁</div>
+  <div class="leaf leaf10">🍃</div>
+  <div class="leaf leaf11">🌿</div>
+  <div class="leaf leaf12">🌱</div>
+
+  <div class="container">
+    <img src="C:\Users\Marc Jonas\Desktop\HTML\Activity11_Jonh Mark\Jonhmark.jpg" alt="My Profile Picture" class="profile-pic">
+
+    <h1>Hello, I'm Jonhmark 🌱</h1>
+    <div class="subtitle">Fixing phones, building ideas, capturing moments — this is my space where creativity meets everyday life.</div>
+
+    <div class="section">
+      <h2>👨‍🔧 About Me</h2>
+      <p>I'm Jonhmark — a curious soul who’s not afraid to get his hands dirty, especially when fixing phones or solving everyday tech issues. I love turning challenges into opportunities to learn. Outside of tech, I enjoy expressing myself through visuals, writing, and quiet moments of reflection.</p>
+    </div>
+
+    <div class="section">
+      <h2>📌 What's Inside This Site</h2>
+      <p>
+        → Personal projects that reflect who I am<br>
+        → A gallery of memories and things I’m proud of<br>
+        → My thoughts, lessons, and sources of inspiration
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>🌟 Why This Matters to Me</h2>
+      <p>This isn’t just a website — it’s a piece of me. It's where I can document my journey, improve my skills, and share my passions. Whether you're here to explore or just stumbled across this space, I hope it gives you a little inspiration or insight into who I am.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      background-color: #c9f0c1;
+      font-family: 'Segoe UI', sans-serif;
+      color: #244e3b;
+      padding: 50px;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 34px;
+      color: #2d5c3f;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: #3c5948;
+      text-align: center;
+    }
+
+    .section {
+      background-color: #ecffeb;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      padding: 30px;
+      margin: 0 auto 30px auto;
+      max-width: 900px;
+      text-align: left;
+    }
+
+    .section h2 {
+      color: #3e704f;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Floating sticker styles */
+    .leaf {
+      position: absolute;
+      font-size: 28px;
+      opacity: 0.3;
+      animation: float 10s ease-in-out infinite;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    /* Sticker positions and delays */
+    .leaf1  { top: 10%; left: 6%;  animation-delay: 0s; }
+    .leaf2  { top: 20%; left: 80%; animation-delay: 1s; }
+    .leaf3  { top: 55%; left: 15%; animation-delay: 2s; }
+    .leaf4  { top: 40%; left: 70%; animation-delay: 3s; }
+    .leaf5  { top: 75%; left: 30%; animation-delay: 4s; }
+    .leaf6  { top: 5%;  left: 45%; animation-delay: 5s; }
+    .leaf7  { top: 85%; left: 60%; animation-delay: 6s; }
+    .leaf8  { top: 65%; left: 85%; animation-delay: 1.5s; }
+    .leaf9  { top: 30%; left: 5%;  animation-delay: 2.5s; }
+    .leaf10 { top: 90%; left: 10%; animation-delay: 3.5s; }
+    .leaf11 { top: 12%; left: 50%; animation-delay: 0.5s; }
+    .leaf12 { top: 38%; left: 35%; animation-delay: 4.5s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(12px) rotate(6deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Stickers -->
+  <div class="leaf leaf1">🍃</div>
+  <div class="leaf leaf2">🌿</div>
+  <div class="leaf leaf3">🍂</div>
+  <div class="leaf leaf4">✨</div>
+  <div class="leaf leaf5">🌸</div>
+  <div class="leaf leaf6">⭐</div>
+  <div class="leaf leaf7">🍀</div>
+  <div class="leaf leaf8">💫</div>
+  <div class="leaf leaf9">🌻</div>
+  <div class="leaf leaf10">🪴</div>
+  <div class="leaf leaf11">🌼</div>
+  <div class="leaf leaf12">🌺</div>
+
+  <!-- Title + Sections -->
+  <h1>🌿 About This Space</h1>
+  <div class="subtitle">A quiet reflection of creativity, curiosity, and growth</div>
+
+  <div class="section">
+    <h2>✨ A Bit About Me</h2>
+    <p>I enjoy working with my hands and figuring out how things work. One of my favorite things to do is fixing phones — whether it's solving issues or giving devices a second life, it’s something that brings me both challenge and satisfaction.</p>
+    <p>I also love exploring different kinds of ideas, from simple DIYs to creative hobbies that bring calm and purpose.</p>
+  </div>
+
+  <div class="section">
+    <h2>🌱 What You’ll See Here</h2>
+    <p>This site is a place to share thoughts, collect inspirations, and reflect on small wins. Whether it’s something I’ve learned, fixed, built, or just observed — everything shared here is a part of the journey.</p>
+  </div>
+
+</body>
+</html>

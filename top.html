@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #d4f5d0, #e6fbe0);
+      font-family: 'Segoe UI', sans-serif;
+      color: #2d4739;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .main {
+      text-align: center;
+      z-index: 2;
+    }
+
+    .header {
+      font-size: 42px;
+      font-weight: 700;
+      background: linear-gradient(to right, #2d4739, #4a6b50);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeIn 2s ease;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #3d5e4a;
+      margin-top: 10px;
+      animation: fadeIn 3s ease;
+    }
+
+    /* Floating leaf emojis */
+    .leaf {
+      position: absolute;
+      font-size: 24px;
+      opacity: 0.3;
+      animation: floatLeaf 8s infinite ease-in-out;
+    }
+
+    .leaf:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; }
+    .leaf:nth-child(2) { top: 20%; left: 80%; animation-delay: 2s; }
+    .leaf:nth-child(3) { top: 60%; left: 15%; animation-delay: 4s; }
+    .leaf:nth-child(4) { top: 40%; left: 70%; animation-delay: 6s; }
+
+    @keyframes floatLeaf {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(15px) rotate(10deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .wave {
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 120 28" xmlns="http://www.w3.org/2000/svg"><path fill="%23d4f5d0" d="M0 0v28h120V0c-20 10-40 10-60 0S20-10 0 0z"/></svg>') repeat-x;
+      background-size: cover;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="leaf">🍃</div>
+  <div class="leaf">🍂</div>
+  <div class="leaf">🍃</div>
+  <div class="leaf">🌿</div>
+
+  <div class="main">
+    <div class="header">🌿 My Creative Space</div>
+    <div class="subtitle">Where ideas grow beautifully</div>
+  </div>
+
+  <div class="wave"></div>
+</body>
+</html>
